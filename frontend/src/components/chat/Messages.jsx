@@ -20,7 +20,7 @@ function Messages() {
 
 
   return (
-    <div className='px-5 mt-2 h-[500px] md:h-[700px] overflow-y-auto' ref={messageContainerRef}>
+    <div className='px-5 mt-2 h-[400px] md:h-[700px] overflow-y-auto' ref={messageContainerRef}>
        {!loading && messages.length > 0 && messages.map((message) => (
 				<div key={message._id}>
 				<Message message={message} />
